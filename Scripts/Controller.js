@@ -38,6 +38,11 @@ App.controller('AppController', function ($scope, $interval) {
             return "Good evening sir!";
     }
 
+    /********************************************************************/
+    /* DEFINITION: Refresh $scope.actDate value after 1s                */
+    /* PARAMETERS: -                                                    */
+    /* RETURN:     Actual date                                          */
+    /********************************************************************/
     $interval(function () {
         $scope.actDate = new Date();
     }, 1000);
