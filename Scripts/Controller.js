@@ -45,6 +45,8 @@ App.controller('AppController', function ($scope, $interval) {
     /********************************************************************/
     $interval(function () {
         $scope.actDate = new Date();
+        $scope.HeaderText = GetHeaderText();
     }, 1000);
+    
 
 });

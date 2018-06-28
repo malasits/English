@@ -15,7 +15,6 @@ body {
 }
 
 .headerText{
-    
     font-size: 45px;
     text-align: center;
     padding: 25px 0px 0px 0px;
@@ -26,4 +25,35 @@ body {
     top:6px;
     right:6px;
     text-align: right;
+}
+
+.navbar{
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.navbar-inverse{
+    background-image: linear-gradient(to bottom,#0c0c0c 0,rgb(19, 19, 19) 100%);
+}
+
+@media screen and (min-width:770px){
+    .navbar-nav > li > a, .navbar-brand {
+        padding-top:6px !important; 
+        padding-bottom:0 !important;
+        height: 35px;
+        transition: color 0.5s;
+    }
+    .navbar {min-height:35px !important;}
+}
+
+@media screen and (max-width:770px){
+    .headerText{
+        font-size: 20px;
+        padding: 35px 0px 10px 0px;
+    }
+    .dateTime{
+        font-size: 10px;
+    }
 }
