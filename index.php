@@ -37,7 +37,7 @@
                           <li><a href="#">Page 1-3</a></li>
                         </ul>
                       </li> -->
-                      <li><a href="#">Dictionary</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#exampleModal">Dictionary</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="https://translate.google.com/?hl=hu" target="_blank">Translate</a></li>
@@ -46,10 +46,31 @@
                 </div>
               </nav>
               <script>              
-                $('.nav a').on('click', function(){
-                    $('.navbar-toggle').click() //bootstrap 3.x by Richard
-                });
+                // $('.nav a').on('click', function(){
+                //    $('.navbar-toggle').click() //bootstrap 3.x by Richard
+                //});
               </script>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         </div>

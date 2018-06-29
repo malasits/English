@@ -30,12 +30,12 @@ App.controller('AppController', function ($scope, $interval) {
         var dt = new Date();
         var time = dt.getHours();
 
-        if(time > 5 && time < 12)
-            return "Good morning sir!";
+        if(time > 4 && time < 12)
+            return "Good morning!";
         else if (time > 11 && time < 19)
-            return "Good afternoon sir!";
+            return "Good afternoon!";
         else
-            return "Good evening sir!";
+            return "Good evening!";
     }
 
     /********************************************************************/
